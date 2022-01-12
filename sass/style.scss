@@ -1,0 +1,535 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+@mixin text{
+    color: #3d2514;
+    font-weight: normal;
+}
+
+@mixin border { 
+    border: 4px solid white;
+    border-radius: 7px 10px;
+    
+}
+
+@mixin background {
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;  
+    filter: grayscale(30%);  
+    transition: .6s;
+    &:hover{
+    background-size: 120%;
+    filter: grayscale(0%);
+    }
+}
+@mixin over {
+    overflow: hidden
+    ;
+    
+}
+@mixin conteudo {
+margin-left: 3.5em;
+font-size: 2em;
+font-weight: normal;
+color: #3d2514;
+font-family: 'Bebas Neue';
+}
+
+@mixin conteudo-p {
+width: 80%;
+font-size: .8rem;
+margin-top: 5px;
+text-align: center;
+font-family: 'Montserrat';
+font-weight:normal;
+
+}
+
+@mixin conteudo-b {
+cursor: pointer;
+border-bottom: none;
+border-style: none;
+color: white;
+background-color:#bf2222;
+font-family: 'Alfa Slab One';
+font-size: 1.5em;
+font-weight: normal;
+padding: 8px 20px;
+margin-top: 30px;
+margin-left: 4em; 
+&:hover{
+color: #3d2514;
+}  
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh!important;
+    background-image:url(/Img/Rectangle.png);
+    background-attachment: fixed; 
+    @media(max-width:1080px){
+       height: 60vh!important;
+        }
+}
+header{
+    .menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo{
+        margin-top: 20px;
+        margin-left: 35px;
+    }
+    .vetor{
+        display: flex;
+        margin-right: 60px;
+        
+        img{
+            padding: 0 5px;
+        }
+        p{
+        font-family: 'Montserrat';
+        margin-top: 10px;
+        @include text()
+        }
+    }
+   
+}
+    nav{
+    display: flex;
+    justify-content: end;
+
+    li{
+        display: inline-block;
+        margin-right: 50px;
+    a{
+    font-family: 'Bebas Neue';
+    font-size: 1.5em;
+    @include text();
+    padding: 8px 8px;
+    /*Responsividade*/
+
+    @media(max-width:1080px){
+    padding: 2px 2px;
+    }
+    &:hover{
+        background-color: #3d2514;
+        color: rgb(255, 255, 255);
+    }
+    }
+    }
+}
+    .bur{
+   margin-top: 20vh; 
+   margin-left: 35px;
+
+p{
+    width: 300px;
+    font-size: 1.2rem;
+    border: 2px dashed;
+    padding: 8px 15px;
+    text-align: center;
+    font-family: 'Bebas Neue';
+    @include text();
+    @media(max-width:1080px){
+        width:200px;
+        font-size:0.8rem;
+        }
+}
+h1{
+  margin-top: 5px;
+  font-size: 6em;
+  font-family: 'Alfa Slab One';
+  @include text();
+  @media(max-width:1080px){
+    font-size: 4em;
+    }
+}
+h2{
+    font-size: 3em;
+    @include text();
+    font-family: 'Alfa Slab One';
+    @media(max-width:1080px){
+        font-size: 2em;
+        }
+     
+}
+}
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 300px;
+    margin-top:-5%;
+    @media(max-width:1080px){
+    left: -90px;
+    }
+        
+    
+    .burger{
+    position: absolute;
+    left: 500px;
+    z-index: 2;
+    margin-bottom: -44px;
+    img{
+        height: 45vh;
+    @media(max-width:1080px){
+
+    height: 20vh;
+    }
+    }
+    .sombra{
+    position: absolute;
+    right: -50px;
+    
+    img{
+    height: 10vh;
+    @media(max-width:1080px){
+    height: 4vh;
+    }
+    }
+
+    }
+    }
+
+   .drink{
+    position: absolute;
+    left: 780px;
+    z-index: 1;
+    img{
+    height: 80vh;
+    }
+    @media(max-width:1080px){
+    overflow: hidden;
+    top: -200px;
+    left: 670px;
+    img{
+    height:30vh;
+    }
+    }
+    .sombra2{
+    position: absolute;
+    right: -100px;
+    img{
+    height: 5vh;
+    
+    @media(max-width:1080px){
+    position: relative;
+    height: 2vh;
+
+    }
+    }
+    }
+
+    img{
+    height: 50vh;
+    }
+    }
+    .french{
+    
+    position: absolute;
+    left: 400px;
+    z-index: 1;
+    @media(max-width:1080px){
+       
+        top: -210px;
+        height: 10vh;
+        }
+    }
+    .glow{
+        
+        position: absolute;
+        left: 400px; 
+        top: -20em;
+        z-index: 0;
+        img{
+            height: 75vh;
+            @media(max-width:1080px){
+
+                height: 45vh;
+                }
+
+        }
+    }
+
+    .pre{
+        position: absolute;
+        left: 460px;
+        z-index:2;
+        top: 55px;
+    img{
+        height: 15vh;
+        @media(max-width:1080px){
+            height: 10vh;
+            }
+    }
+    }
+}
+}
+
+main{
+.section1{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 30vh 30vh;
+grid-gap: 20px;
+margin: 0 auto;
+padding: 80px;
+
+
+
+.img1{
+background-image: url(/Img/Burger.png);
+@include background();
+grid-row: 1 /3;
+border: 3px solid white;
+border-radius: 10px 12px;
+
+.text{
+    margin: 1.5em;
+    p{
+color: white;
+font-family: 'Bebas Neue';
+font-size: 1.7em;
+}
+h1{
+    font-family: 'Bebas Neue';
+    color: white;
+    font-size: 3em;
+    font-weight: normal;
+}
+}
+}
+.img2{
+background-image: url(/Img/Image.png);
+@include background();    
+@include border();
+
+.text{
+    margin: 1.8rem;
+    font-family: 'Bebas Neue';
+    font-weight: 100;
+    color: white;
+    p{
+        font-size: 1.5em;
+    }
+
+    h1{
+    font-size: 2.6em;
+    }
+    h2{
+        @extend h1
+    }
+}
+
+}
+.img3{
+background-image: url(/Img/Image-2.png);
+@include background();
+@include border();
+.text{
+margin: 1.8rem;
+font-family: 'Bebas Neue';
+font-weight: 100;
+color: white;
+p{
+    font-size: 1.5em;
+}
+h1{
+    font-size: 2.6em;
+}
+}
+}
+
+}
+button{
+    cursor: pointer;
+    margin-left: 19em;
+    color: #3d2514;
+    background-color: #ffc045;
+    padding:5px 25px;
+    font-family: 'Bebas Neue';
+    font-size: 2em;
+    text-align: center;
+    border-style: none;
+    &:hover{
+        color: white;
+        
+    }
+}
+}
+.section2{
+    .text{
+margin-top: 40px;
+text-align: center;
+h1{
+color: #3d2514;
+font-family: 'Bebas Neue';
+font-size: 5.2rem;
+}
+p{
+width: 60%;
+margin-left: 20em;
+font-family: 'Bebas Neue';
+font-weight: normal;
+}
+
+}
+.burgs{
+width: 100%; 
+margin-top: 50px;  
+display: flex;
+overflow: hidden;
+position: relative;
+
+.bur1{
+position: relative;
+left: 5em;
+overflow: hidden;
+@include over();  
+img{
+height: 55%;
+}
+.conteudo{
+h1{
+@include conteudo();
+}
+p{
+@include conteudo-p()
+}
+button{
+    @include conteudo-b();
+}
+}
+
+}
+.bur3{
+overflow: hidden;
+position: relative;
+@include over(); 
+left: 8em; 
+.conteudo1{
+h1{
+@include conteudo();
+}
+
+p{
+@include conteudo-p();
+}
+
+button{
+@include conteudo-b();
+}
+
+}
+
+img{
+height: 55%;
+}
+}
+.bur2{
+position: relative;
+left: 6rem; 
+
+img{
+height: 55%;
+}
+}
+.conteudo3{
+    margin-left: 3.8em;
+h1{
+@include conteudo();
+}
+p{
+@include conteudo-p();
+}
+button{
+@include conteudo-b();
+}
+}
+}
+}
+
+.section3{
+.slides{
+    display: flex;
+    position: absolute;
+    left: 15em;
+    height: 45vh;
+    width: 75%;
+    border: 8px solid rgb(255, 255, 255);
+    padding: 10px;
+    margin-top: 35px;
+    box-shadow: 2px 2px 2px 2px rgba(19, 19, 19, 0.459);
+    overflow: hidden;
+    transition: all 0.4s;
+
+    .img{
+    img{
+        height: 45vh;
+            
+    }
+    }
+    
+   .text7{
+       margin-left: 20px;
+       padding: 10px 10px;
+    .p1{
+      font-family: 'Bebas Neue';
+      color:#57351c;
+      font-size: 1.6em;
+    }
+    p{
+     font-family: 'Montserrat';
+     font-size: 1em;
+    }
+    h1{
+        font-family: 'Alfa Slab One';
+        font-size: 2.5em;
+        color: #3d2514;
+        margin-bottom: 5px;
+    }
+   }
+
+   .bolas{
+position: absolute;
+display: flex;
+justify-content: center;
+margin-top: 18.5rem;
+margin-left: 2.5rem;
+
+.bola{
+transition: all 0.4s;
+background:yellow;
+}
+
+div{
+transition: all 0.5s;
+border: 2px solid rgb(109, 109, 109);
+padding: 6px;
+border-radius: 50%;
+cursor: pointer;
+&:hover{
+background:yellow;
+}
+
+}
+
+}
+   
+}  
+}
+/*Responsividade*/
+
+@media(max-width:180){
+    
+
+}

@@ -1,0 +1,662 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh !important;
+  background-image: url(/Img/Rectangle.png);
+  background-attachment: fixed;
+}
+
+@media (max-width: 1080px) {
+  .wrapper {
+    height: 60vh !important;
+  }
+}
+
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .menu .logo {
+  margin-top: 20px;
+  margin-left: 35px;
+}
+
+header .menu .vetor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 60px;
+}
+
+header .menu .vetor img {
+  padding: 0 5px;
+}
+
+header .menu .vetor p {
+  font-family: 'Montserrat';
+  margin-top: 10px;
+  color: #3d2514;
+  font-weight: normal;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+header nav li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+header nav li a {
+  font-family: 'Bebas Neue';
+  font-size: 1.5em;
+  color: #3d2514;
+  font-weight: normal;
+  padding: 8px 8px;
+  /*Responsividade*/
+}
+
+@media (max-width: 1080px) {
+  header nav li a {
+    padding: 2px 2px;
+  }
+}
+
+header nav li a:hover {
+  background-color: #3d2514;
+  color: white;
+}
+
+header .bur {
+  margin-top: 20vh;
+  margin-left: 35px;
+}
+
+header .bur p {
+  width: 300px;
+  font-size: 1.2rem;
+  border: 2px dashed;
+  padding: 8px 15px;
+  text-align: center;
+  font-family: 'Bebas Neue';
+  color: #3d2514;
+  font-weight: normal;
+}
+
+@media (max-width: 1080px) {
+  header .bur p {
+    width: 200px;
+    font-size: 0.8rem;
+  }
+}
+
+header .bur h1, header .bur main .section1 .img2 .text h2, main .section1 .img2 .text header .bur h2 {
+  margin-top: 5px;
+  font-size: 6em;
+  font-family: 'Alfa Slab One';
+  color: #3d2514;
+  font-weight: normal;
+}
+
+@media (max-width: 1080px) {
+  header .bur h1, header .bur main .section1 .img2 .text h2, main .section1 .img2 .text header .bur h2 {
+    font-size: 4em;
+  }
+}
+
+header .bur h2 {
+  font-size: 3em;
+  color: #3d2514;
+  font-weight: normal;
+  font-family: 'Alfa Slab One';
+}
+
+@media (max-width: 1080px) {
+  header .bur h2 {
+    font-size: 2em;
+  }
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 300px;
+  margin-top: -5%;
+}
+
+@media (max-width: 1080px) {
+  header .container {
+    left: -90px;
+  }
+}
+
+header .container .burger {
+  position: absolute;
+  left: 500px;
+  z-index: 2;
+  margin-bottom: -44px;
+}
+
+header .container .burger img {
+  height: 45vh;
+}
+
+@media (max-width: 1080px) {
+  header .container .burger img {
+    height: 20vh;
+  }
+}
+
+header .container .burger .sombra {
+  position: absolute;
+  right: -50px;
+}
+
+header .container .burger .sombra img {
+  height: 10vh;
+}
+
+@media (max-width: 1080px) {
+  header .container .burger .sombra img {
+    height: 4vh;
+  }
+}
+
+header .container .drink {
+  position: absolute;
+  left: 780px;
+  z-index: 1;
+}
+
+header .container .drink img {
+  height: 80vh;
+}
+
+@media (max-width: 1080px) {
+  header .container .drink {
+    overflow: hidden;
+    top: -200px;
+    left: 670px;
+  }
+  header .container .drink img {
+    height: 30vh;
+  }
+}
+
+header .container .drink .sombra2 {
+  position: absolute;
+  right: -100px;
+}
+
+header .container .drink .sombra2 img {
+  height: 5vh;
+}
+
+@media (max-width: 1080px) {
+  header .container .drink .sombra2 img {
+    position: relative;
+    height: 2vh;
+  }
+}
+
+header .container .drink img {
+  height: 50vh;
+}
+
+header .container .french {
+  position: absolute;
+  left: 400px;
+  z-index: 1;
+}
+
+@media (max-width: 1080px) {
+  header .container .french {
+    top: -210px;
+    height: 10vh;
+  }
+}
+
+header .container .glow {
+  position: absolute;
+  left: 400px;
+  top: -20em;
+  z-index: 0;
+}
+
+header .container .glow img {
+  height: 75vh;
+}
+
+@media (max-width: 1080px) {
+  header .container .glow img {
+    height: 45vh;
+  }
+}
+
+header .container .pre {
+  position: absolute;
+  left: 460px;
+  z-index: 2;
+  top: 55px;
+}
+
+header .container .pre img {
+  height: 15vh;
+}
+
+@media (max-width: 1080px) {
+  header .container .pre img {
+    height: 10vh;
+  }
+}
+
+main .section1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 30vh 30vh;
+      grid-template-rows: 30vh 30vh;
+  grid-gap: 20px;
+  margin: 0 auto;
+  padding: 80px;
+}
+
+main .section1 .img1 {
+  background-image: url(/Img/Burger.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(30%);
+          filter: grayscale(30%);
+  -webkit-transition: .6s;
+  transition: .6s;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 /3;
+  border: 3px solid white;
+  border-radius: 10px 12px;
+}
+
+main .section1 .img1:hover {
+  background-size: 120%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+main .section1 .img1 .text {
+  margin: 1.5em;
+}
+
+main .section1 .img1 .text p {
+  color: white;
+  font-family: 'Bebas Neue';
+  font-size: 1.7em;
+}
+
+main .section1 .img1 .text h1, main .section1 .img1 .img2 .text h2, main .section1 .img2 .img1 .text h2 {
+  font-family: 'Bebas Neue';
+  color: white;
+  font-size: 3em;
+  font-weight: normal;
+}
+
+main .section1 .img2 {
+  background-image: url(/Img/Image.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(30%);
+          filter: grayscale(30%);
+  -webkit-transition: .6s;
+  transition: .6s;
+  border: 4px solid white;
+  border-radius: 7px 10px;
+}
+
+main .section1 .img2:hover {
+  background-size: 120%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+main .section1 .img2 .text {
+  margin: 1.8rem;
+  font-family: 'Bebas Neue';
+  font-weight: 100;
+  color: white;
+}
+
+main .section1 .img2 .text p {
+  font-size: 1.5em;
+}
+
+main .section1 .img2 .text h1, main .section1 .img2 .text h2 {
+  font-size: 2.6em;
+}
+
+main .section1 .img3 {
+  background-image: url(/Img/Image-2.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-filter: grayscale(30%);
+          filter: grayscale(30%);
+  -webkit-transition: .6s;
+  transition: .6s;
+  border: 4px solid white;
+  border-radius: 7px 10px;
+}
+
+main .section1 .img3:hover {
+  background-size: 120%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+main .section1 .img3 .text {
+  margin: 1.8rem;
+  font-family: 'Bebas Neue';
+  font-weight: 100;
+  color: white;
+}
+
+main .section1 .img3 .text p {
+  font-size: 1.5em;
+}
+
+main .section1 .img3 .text h1, main .section1 .img3 .img2 .text h2, main .section1 .img2 .img3 .text h2 {
+  font-size: 2.6em;
+}
+
+main button {
+  cursor: pointer;
+  margin-left: 19em;
+  color: #3d2514;
+  background-color: #ffc045;
+  padding: 5px 25px;
+  font-family: 'Bebas Neue';
+  font-size: 2em;
+  text-align: center;
+  border-style: none;
+}
+
+main button:hover {
+  color: white;
+}
+
+.section2 .text {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.section2 .text h1, .section2 main .section1 .img2 .text h2, main .section1 .img2 .section2 .text h2 {
+  color: #3d2514;
+  font-family: 'Bebas Neue';
+  font-size: 5.2rem;
+}
+
+.section2 .text p {
+  width: 60%;
+  margin-left: 20em;
+  font-family: 'Bebas Neue';
+  font-weight: normal;
+}
+
+.section2 .burgs {
+  width: 100%;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.section2 .burgs .bur1 {
+  position: relative;
+  left: 5em;
+  overflow: hidden;
+  overflow: hidden;
+}
+
+.section2 .burgs .bur1 img {
+  height: 55%;
+}
+
+.section2 .burgs .bur1 .conteudo h1, .section2 .burgs .bur1 .conteudo main .section1 .img2 .text h2, main .section1 .img2 .text .section2 .burgs .bur1 .conteudo h2 {
+  margin-left: 3.5em;
+  font-size: 2em;
+  font-weight: normal;
+  color: #3d2514;
+  font-family: 'Bebas Neue';
+}
+
+.section2 .burgs .bur1 .conteudo p {
+  width: 80%;
+  font-size: .8rem;
+  margin-top: 5px;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: normal;
+}
+
+.section2 .burgs .bur1 .conteudo button {
+  cursor: pointer;
+  border-bottom: none;
+  border-style: none;
+  color: white;
+  background-color: #bf2222;
+  font-family: 'Alfa Slab One';
+  font-size: 1.5em;
+  font-weight: normal;
+  padding: 8px 20px;
+  margin-top: 30px;
+  margin-left: 4em;
+}
+
+.section2 .burgs .bur1 .conteudo button:hover {
+  color: #3d2514;
+}
+
+.section2 .burgs .bur3 {
+  overflow: hidden;
+  position: relative;
+  overflow: hidden;
+  left: 8em;
+}
+
+.section2 .burgs .bur3 .conteudo1 h1, .section2 .burgs .bur3 .conteudo1 main .section1 .img2 .text h2, main .section1 .img2 .text .section2 .burgs .bur3 .conteudo1 h2 {
+  margin-left: 3.5em;
+  font-size: 2em;
+  font-weight: normal;
+  color: #3d2514;
+  font-family: 'Bebas Neue';
+}
+
+.section2 .burgs .bur3 .conteudo1 p {
+  width: 80%;
+  font-size: .8rem;
+  margin-top: 5px;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: normal;
+}
+
+.section2 .burgs .bur3 .conteudo1 button {
+  cursor: pointer;
+  border-bottom: none;
+  border-style: none;
+  color: white;
+  background-color: #bf2222;
+  font-family: 'Alfa Slab One';
+  font-size: 1.5em;
+  font-weight: normal;
+  padding: 8px 20px;
+  margin-top: 30px;
+  margin-left: 4em;
+}
+
+.section2 .burgs .bur3 .conteudo1 button:hover {
+  color: #3d2514;
+}
+
+.section2 .burgs .bur3 img {
+  height: 55%;
+}
+
+.section2 .burgs .bur2 {
+  position: relative;
+  left: 6rem;
+}
+
+.section2 .burgs .bur2 img {
+  height: 55%;
+}
+
+.section2 .burgs .conteudo3 {
+  margin-left: 3.8em;
+}
+
+.section2 .burgs .conteudo3 h1, .section2 .burgs .conteudo3 main .section1 .img2 .text h2, main .section1 .img2 .text .section2 .burgs .conteudo3 h2 {
+  margin-left: 3.5em;
+  font-size: 2em;
+  font-weight: normal;
+  color: #3d2514;
+  font-family: 'Bebas Neue';
+}
+
+.section2 .burgs .conteudo3 p {
+  width: 80%;
+  font-size: .8rem;
+  margin-top: 5px;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-weight: normal;
+}
+
+.section2 .burgs .conteudo3 button {
+  cursor: pointer;
+  border-bottom: none;
+  border-style: none;
+  color: white;
+  background-color: #bf2222;
+  font-family: 'Alfa Slab One';
+  font-size: 1.5em;
+  font-weight: normal;
+  padding: 8px 20px;
+  margin-top: 30px;
+  margin-left: 4em;
+}
+
+.section2 .burgs .conteudo3 button:hover {
+  color: #3d2514;
+}
+
+.section3 .slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 15em;
+  height: 45vh;
+  width: 75%;
+  border: 8px solid white;
+  padding: 10px;
+  margin-top: 35px;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(19, 19, 19, 0.459);
+          box-shadow: 2px 2px 2px 2px rgba(19, 19, 19, 0.459);
+  overflow: hidden;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.section3 .slides .img img {
+  height: 45vh;
+}
+
+.section3 .slides .text7 {
+  margin-left: 20px;
+  padding: 10px 10px;
+}
+
+.section3 .slides .text7 .p1 {
+  font-family: 'Bebas Neue';
+  color: #57351c;
+  font-size: 1.6em;
+}
+
+.section3 .slides .text7 p {
+  font-family: 'Montserrat';
+  font-size: 1em;
+}
+
+.section3 .slides .text7 h1, .section3 .slides .text7 main .section1 .img2 .text h2, main .section1 .img2 .text .section3 .slides .text7 h2 {
+  font-family: 'Alfa Slab One';
+  font-size: 2.5em;
+  color: #3d2514;
+  margin-bottom: 5px;
+}
+
+.section3 .slides .bolas {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 18.5rem;
+  margin-left: 2.5rem;
+}
+
+.section3 .slides .bolas .bola {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  background: yellow;
+}
+
+.section3 .slides .bolas div {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 2px solid #6d6d6d;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.section3 .slides .bolas div:hover {
+  background: yellow;
+}
+
+/*Responsividade*/
+/*# sourceMappingURL=style.css.map */
