@@ -64,7 +64,7 @@ padding: 8px 20px;
 margin-top: 30px;
 margin-left: 4em; 
 &:hover{
-color: #3d2514;
+background: yellow;
 }  
 }
 
@@ -461,14 +461,14 @@ button{
 .section3{
 .slides{
     display: flex;
-    position: absolute;
+    position: relative;
     left: 15em;
     height: 45vh;
-    width: 75%;
+    width: 80%;
     border: 8px solid rgb(255, 255, 255);
     padding: 10px;
     margin-top: 35px;
-    box-shadow: 2px 2px 2px 2px rgba(19, 19, 19, 0.459);
+    box-shadow: 12px 12px 12px 12px rgba(19, 19, 19, 0.459);
     overflow: hidden;
     transition: all 0.4s;
 
@@ -526,6 +526,130 @@ background:yellow;
 }
    
 }  
+}
+
+.reserva{
+    
+.text8{
+color: #3d2514;
+margin-top: 15rem;
+text-align: center;
+p{  font-size: 1.5em;
+    font-family: 'Bebas Neue';
+}
+h1{
+font-size: 3em;
+margin-top: 1rem;
+font-family: 'Alfa Slab One';
+}
+}
+.tabela{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top:2rem;
+
+.tabela1{
+padding: 1rem;
+div{
+padding: 0.5rem;
+.t1{
+    font-size: 0.9em;
+font-family: 'Bebas Neue';
+text-align: start;
+ padding: 2em 18em 2em 2rem;
+ border:2px solid rgb(155, 153, 153);
+ border-radius: 4px 4px;
+}
+}
+}
+.tabela2{
+@extend .tabela1;
+div{
+@extend div;
+button{
+cursor:pointer;
+font-family: 'Alfa Slab One';
+padding: 1.5em 7em;
+font-size: 1.2em;
+border: 1px solid red;
+border-radius: 6px 6px ;
+background:#bf2222;
+color: white;
+transition: 0.4s;
+&:hover{
+border: 1px solid #ffc045;
+border-radius: 6px 6px ;
+background: #ffc045;
+}
+}
+}
+}
+
+}
+
+}
+
+.section4{
+.imagem4{
+display: flex;
+position: absolute;
+
+.bur4{
+position:relative;
+top: -38rem;
+
+}
+.bottle{
+position: relative;
+top: -23rem;
+right: 15rem;
+
+}
+.prato{
+position: relative;
+left: 36rem;
+top: -15rem;
+img{
+    height: 70vh;
+}
+
+}
+}
+}
+
+.fim{
+margin: 13rem auto;
+top: 50rem;
+width: 90%;
+height: 50vh;
+background-image: url(/Img/Place.png);
+background-repeat: no-repeat;
+
+.logo{
+margin-left: 4rem;
+padding-top: 5rem;
+p{
+margin-top: 1rem;
+color: white;
+width: 40%;
+}
+}
+
+.icon{
+display: flex;
+justify-content: end;
+align-items: flex-end;
+margin-top: 5rem;
+margin-right: 2em;
+
+div{
+a{
+cursor: pointer;
+padding: 1em 0.3em;
+}
+}
+}
 }
 /*Responsividade*/
 

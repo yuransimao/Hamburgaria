@@ -485,7 +485,7 @@ main button:hover {
 }
 
 .section2 .burgs .bur1 .conteudo button:hover {
-  color: #3d2514;
+  background: yellow;
 }
 
 .section2 .burgs .bur3 {
@@ -527,7 +527,7 @@ main button:hover {
 }
 
 .section2 .burgs .bur3 .conteudo1 button:hover {
-  color: #3d2514;
+  background: yellow;
 }
 
 .section2 .burgs .bur3 img {
@@ -579,22 +579,22 @@ main button:hover {
 }
 
 .section2 .burgs .conteudo3 button:hover {
-  color: #3d2514;
+  background: yellow;
 }
 
 .section3 .slides {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
+  position: relative;
   left: 15em;
   height: 45vh;
-  width: 75%;
+  width: 80%;
   border: 8px solid white;
   padding: 10px;
   margin-top: 35px;
-  -webkit-box-shadow: 2px 2px 2px 2px rgba(19, 19, 19, 0.459);
-          box-shadow: 2px 2px 2px 2px rgba(19, 19, 19, 0.459);
+  -webkit-box-shadow: 12px 12px 12px 12px rgba(19, 19, 19, 0.459);
+          box-shadow: 12px 12px 12px 12px rgba(19, 19, 19, 0.459);
   overflow: hidden;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -656,6 +656,139 @@ main button:hover {
 
 .section3 .slides .bolas div:hover {
   background: yellow;
+}
+
+.reserva .text8 {
+  color: #3d2514;
+  margin-top: 15rem;
+  text-align: center;
+}
+
+.reserva .text8 p {
+  font-size: 1.5em;
+  font-family: 'Bebas Neue';
+}
+
+.reserva .text8 h1, .reserva .text8 main .section1 .img2 .text h2, main .section1 .img2 .text .reserva .text8 h2 {
+  font-size: 3em;
+  margin-top: 1rem;
+  font-family: 'Alfa Slab One';
+}
+
+.reserva .tabela {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+.reserva .tabela .tabela1, .reserva .tabela .tabela2 {
+  padding: 1rem;
+}
+
+.reserva .tabela .tabela1 div, .reserva .tabela .tabela2 div {
+  padding: 0.5rem;
+}
+
+.reserva .tabela .tabela1 div .t1, .reserva .tabela .tabela2 div .t1 {
+  font-size: 0.9em;
+  font-family: 'Bebas Neue';
+  text-align: start;
+  padding: 2em 18em 2em 2rem;
+  border: 2px solid #9b9999;
+  border-radius: 4px 4px;
+}
+
+.reserva .tabela .tabela2 div button {
+  cursor: pointer;
+  font-family: 'Alfa Slab One';
+  padding: 1.5em 7em;
+  font-size: 1.2em;
+  border: 1px solid red;
+  border-radius: 6px 6px;
+  background: #bf2222;
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.reserva .tabela .tabela2 div button:hover {
+  border: 1px solid #ffc045;
+  border-radius: 6px 6px;
+  background: #ffc045;
+}
+
+.section4 .imagem4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+}
+
+.section4 .imagem4 .bur4 {
+  position: relative;
+  top: -38rem;
+}
+
+.section4 .imagem4 .bottle {
+  position: relative;
+  top: -23rem;
+  right: 15rem;
+}
+
+.section4 .imagem4 .prato {
+  position: relative;
+  left: 36rem;
+  top: -15rem;
+}
+
+.section4 .imagem4 .prato img {
+  height: 70vh;
+}
+
+.fim {
+  margin: 13rem auto;
+  top: 50rem;
+  width: 90%;
+  height: 50vh;
+  background-image: url(/Img/Place.png);
+  background-repeat: no-repeat;
+}
+
+.fim .logo {
+  margin-left: 4rem;
+  padding-top: 5rem;
+}
+
+.fim .logo p {
+  margin-top: 1rem;
+  color: white;
+  width: 40%;
+}
+
+.fim .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 5rem;
+  margin-right: 2em;
+}
+
+.fim .icon div a, .fim .icon .reserva .tabela .tabela2 div a, .reserva .tabela .tabela2 .fim .icon div a {
+  cursor: pointer;
+  padding: 1em 0.3em;
 }
 
 /*Responsividade*/
